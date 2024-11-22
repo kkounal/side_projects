@@ -14,7 +14,9 @@ try:
     from deep_translator import GoogleTranslator
     from moviepy.editor import VideoFileClip, CompositeVideoClip, TextClip
     from moviepy.video.tools.subtitles import SubtitlesClip
-except ImportError:
+except ImportError as err:
+    sys.stderr.write("Error: failed to import module ({})".format(err))
+    time.sleep(1)
     print("Needed dependencies not found, Automatically install them? Y/n?")
     response = input()
     if response == "Y" or response == "y":
