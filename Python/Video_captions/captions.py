@@ -21,7 +21,7 @@ except ImportError:
         print("trying to install dependencies")
 
         def install_libraries():
-            required_libraries = ['whisper', 'yt_dlp', 'moviepy']
+            required_libraries = ['whisper', 'yt_dlp', 'moviepy','deep-translator']
             current_os = platform.system()
             
             if current_os == 'Windows':
