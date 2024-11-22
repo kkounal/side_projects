@@ -15,7 +15,7 @@ try:
     from moviepy.editor import VideoFileClip, CompositeVideoClip, TextClip
     from moviepy.video.tools.subtitles import SubtitlesClip
 except ImportError as err:
-    sys.stdout.write("Error: failed to import module ({})".format(err))
+    sys.stdout.write("Error: failed to import module ({}) \n".format(err))
     time.sleep(1)
     print("Needed dependencies not found, Automatically install them? Y/n?")
     response = input()
