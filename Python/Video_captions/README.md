@@ -36,6 +36,7 @@ options:
 User Manual:
 ====================
  functions:
+    
     generate: generate subtitles (srt) file for a video
 
     attach: attach/embed a srt file to/inside a video
